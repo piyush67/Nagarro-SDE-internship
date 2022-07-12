@@ -1,0 +1,57 @@
+.container .card {
+  max-width: 500px;
+}
+
+li a .img-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #e84118;
+  padding: 2px;
+}
+
+li a .img-box img {
+  height: 100%;
+  max-width: 100%;
+}
+
+a.nav-link {
+  color: gray;
+}
+
+.card-body {
+  height: 500px;
+  overflow: auto;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #e84118;
+  padding: 2px;
+}
+
+.avatar img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.progress {
+  height: 4px;
+  width: 100px;
+}
+
+.progressbar {
+  width: 35%;
+}
+
+input:focus,
+button:focus {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.small {
+  font-size: 0.67em;
+}
