@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu+Mono:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+body > main {
+  height: 300rem;
+}
+
+.app-icon {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-around;
+  gap: 1rem;
+  box-shadow: 0 0.3rem 0.2rem rgba(0, 0, 0, 0.095);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding-top: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 1rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav:last-child {
+  margin: 0 1.5rem 0.8rem 0.2rem;
+  font-size: 0.85rem;
+}
+
+nav h2 {
+  cursor: pointer;
+}
+
+nav:last-child h2:first-child {
+  color: #000;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-box {
+  background: rgba(194, 191, 191, 0.383);
+  padding: 1rem 1.5rem;
+  width: 50rem;
+  border-radius: 2.5rem;
+  margin-left: -1rem;
+}
+
+.search-box img {
+  height: 1.5rem !important;
+  width: 1.5rem !important;
+  cursor: pointer;
+}
+
+.search-box input {
+  width: 88%;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  background: none;
+}
+
+.search-box input::placeholder {
+  letter-spacing: 0.05rem;
+}
+
+input[type='text']::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='text']::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+header nav h2,
+header nav span {
+  color: rgba(0, 0, 0, 0.626);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.separator {
+  height: 2.8rem;
+  width: 0.7px;
+  background: rgba(0, 0, 0, 0.402);
+}
+
+.login-signup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.login-signup span {
+  font-size: 1.6rem;
+}
+
+.submit-btn {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border: 1.2px solid rgba(104, 103, 103, 0.396);
+  padding: 0.8rem;
+  color: gray;
+  border-radius: 0.5rem;
+}
+
+nav img:last-child {
+  height: 3.3rem;
+  width: 3rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  margin-top: 15rem;
+}
+
+main img {
+  width: 30%;
+  height: 40rem;
+}
