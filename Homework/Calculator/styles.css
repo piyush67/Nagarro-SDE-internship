@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  background-color: #ecf0f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 5rem;
+  /* width: 100vh; */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  gap: 1rem;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
+  letter-spacing: 0.2rem;
+}
+
+header h1,
+header h2 {
+  transition: all 0.2s;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header h1:hover,
+header h2:hover {
+  color: black;
+  cursor: pointer;
+  text-shadow: 6px 6px 13px rgb(163, 162, 162);
+  transform: scale(1.05);
+}
+
+.calculator {
+  box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  border-radius: 2.8rem;
+  padding: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 6.6rem);
+}
+
+input {
+  grid-column: span 4;
+  height: 6.8rem;
+  width: 25.8rem;
+  box-shadow: inset -6px -6px 13px #fff, inset 6px 6px 13px rgba(0, 0, 0, 0.16);
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 3.2rem;
+  color: rgb(26, 25, 25);
+  text-align: end;
+  margin: 4rem 0 3rem 0;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+button {
+  box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  background-color: #ecf0f3;
+  border: none;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  margin: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.calculator button:last-child {
+  width: 12rem;
+  border-radius: 4.2rem;
+  box-shadow: inset 6px 6px 13px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+  background-color: #ecf0f3;
+  transition: all 0.2s;
+}
+
+button:active {
+  transform: translateY(0.2rem);
+  box-shadow: inset 6px 6px 13px #fff, 3px 3px 7px rgba(0, 0, 0, 0.16);
+}
+
+.calculator button:last-child:active {
+  transform: translateY(0.2rem);
+  box-shadow: inset 6px 6px 13px #fff, 3px 3px 7px rgba(0, 0, 0, 0.16);
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 1.5rem;
+    letter-spacing: 0.08rem;
+    border-radius: 1.5rem;
+  }
+  header h1,
+  header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 565px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  html {
+    font-size: 6px;
+  }
+}
